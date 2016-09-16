@@ -1,0 +1,322 @@
+﻿body 
+{
+    font-family:Arial Tahoma;
+    font-size:12px;
+}
+/*Master Page*/
+#main
+{
+    width:1200px;
+    height:800px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;    
+    margin-top:0px;
+}
+/*Banner CSS*/
+#head
+{
+    height: 130px;
+    background-color: #F5F5F5;
+    margin-bottom:0px;
+    margin-top:-10px;
+    padding-top:0px;
+}
+
+/*Header*/
+#banner
+{
+    position:relative;
+}
+#head p
+{
+    position:absolute;
+    top:-10px;
+    margin-left:400px;
+    font-family:Times New Roman;
+    font-size:50px;
+    font-weight:bolder;
+    color:#8B0000;
+}
+/*CSS Menu*/
+#menu
+{
+     height: 30px;
+     line-height: 30px;
+     min-width:70px;
+     background-color: #008B45;
+     margin-bottom:0px;
+     clear: both;
+}
+
+/*CSS Left Column*/
+#left
+{
+     width: 160px;
+     min-height: 800px;
+     float:left;
+     border-left:1px solid;
+     border-right:1px solid;
+     border-color:Gray;
+}
+
+/*CSS Main Content*/
+#content
+{
+     width: 790px;
+     min-height: 800px;
+     float:left;
+}
+
+.grid
+{
+    text-align:center;
+    margin-left:10px;
+}
+
+/*CSS Right*/
+#right
+{
+     width: 230px;
+     min-height: 800px;
+     float:right;
+     border-left:1px solid;
+     border-right:1px solid;
+     border-color:Gray;
+}
+
+/*CSS Footer*/
+#footer
+{
+     height: 50px;
+     clear: both;
+     background-color: #2F4F4F;
+}
+#footer p
+{
+    font-size:18px;
+    text-align:center;
+    padding-top:15px;
+    color:#EEDFCC;
+}
+
+/*CSS Login Page*/
+#login_main
+{
+    width:400px;
+    height:300px;
+    border-radius:20px;
+    margin:100px auto 0px auto;
+    background-color:#D1EEEE;
+    border:2px solid #2F4F4F;
+    
+}
+
+#login_box
+{
+    width:350px;
+    height:100px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    background-color:White;
+    border:2px solid #4A708B;
+    border-radius:15px;
+}
+
+.button
+{
+    font-size:18px;
+    border-radius:5px;
+    width:70px;
+    border:2px solid #104E8B;
+    background-color:#EEE5DE;
+}
+
+#button_box
+{
+    width:350px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+}
+
+.button:hover
+{
+    background-color:#2F4F4F;
+    border:2px solid #B0E2FF;
+    color:White;
+}
+
+/*Create Account Page*/
+#createAccount
+{
+    width:500px;
+    margin:0 auto 0 auto;
+    padding-top:20px;
+}
+
+#button_box_account
+{
+    width:250px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+}
+
+.title
+{
+    font-size:24px;
+    
+}
+
+.radio_button
+{
+    font-size:14px;
+    padding-left:20px;
+}
+
+/*Report Page*/
+#report
+{
+    margin:10px auto auto 20px;
+}
+
+.table_cell_left
+{
+    width:20%;
+    border-right:1px solid;
+    border-bottom:1px solid
+}
+
+.dropdown
+{
+    height:22px;
+    width:200px;
+}
+
+/*Update Role*/
+#update
+{
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#button
+{
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*Change Avatar*/
+#changeAvatar
+{
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.changeAvaButton
+{
+    font-size:14px;
+    border-radius:5px;
+    border:2px solid #104E8B;
+    background-color:#EEE5DE;
+}
+
+.changeAvaButton:hover
+{
+    background-color:#2F4F4F;
+    border:2px solid #B0E2FF;
+    color:White;
+}
+
+.textarea
+{
+    resize:none;    
+}
+
+/*CSS Tab Page*/
+/*Header*/
+.Tab .ajax__tab_tab
+{
+    width:70px;
+}
+.Tab .ajax__tab_header
+{
+    color: #4682b4;
+    font-family:Calibri;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ffffff;
+    margin-left:0px;
+    width:100%;
+    min-height:20px;
+    padding-top:20px;
+}
+/*Body*/
+.Tab .ajax__tab_body
+{
+    padding-top:20px;
+}
+/*Tab Active*/
+.Tab .ajax__tab_active .ajax__tab_tab
+{
+    color: #ffffff;
+    background:url("../IMAGES/tab_active.gif") repeat-x;
+    height:20px;
+}
+.Tab .ajax__tab_active .ajax__tab_inner
+{
+    color: #ffffff;
+    background:url("../IMAGES/tab_left_active.gif") no-repeat left;
+    padding-left:10px;
+}
+.Tab .ajax__tab_active .ajax__tab_outer
+{
+    color: #ffffff;
+    background:url("../IMAGES/tab_right_active.gif") no-repeat right;
+    padding-right:6px;
+}
+/*Tab Hover*/
+.Tab .ajax__tab_hover .ajax__tab_tab
+{
+    color: #000000;
+    background:url("../IMAGES/tab_hover.gif") repeat-x;
+    height:20px;
+}
+.Tab .ajax__tab_hover .ajax__tab_inner
+{
+    color: #000000;
+    background:url("../IMAGES/tab_left_hover.gif") no-repeat left;
+    padding-left:10px;
+}
+.Tab .ajax__tab_hover .ajax__tab_outer
+{
+    color: #000000;
+    background:url("../IMAGES/tab_right_hover.gif") no-repeat right;
+    padding-right:6px;
+}
+/*Tab Inactive*/
+.Tab .ajax__tab_tab
+{
+    color: #666666;
+    background:url("../IMAGES/tab_Inactive.gif") repeat-x;
+    height:20px;
+}
+.Tab .ajax__tab_inner
+{
+    color: #666666;
+    background:url("../IMAGES/tab_left_inactive.gif") no-repeat left;
+    padding-left:10px;
+}
+.Tab .ajax__tab_outer
+{
+    color: #666666;
+    background:url("../IMAGES/tab_right_inactive.gif") no-repeat right;
+    padding-right:6px;
+    margin-right: 2px;
+}
+

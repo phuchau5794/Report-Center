@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+<%@ Register TagPrefix="UC" TagName="menu" Src="~/UC/menu_UC.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>REPORT CENTER</title>
+    <link href="~/CSS/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+        <div id="head">
+            <div id="banner"><img alt="" src="IMAGES/head.jpg" height="130px" width="1200px"/></div>
+            <p>REPORT CENTER</p>
+        </div>
+        <div id="menu">
+            <UC:menu runat="server"/>
+        </div>
+        <div id="left">
+            <table width="160px" id="info" border="0">
+                <tr style="text-align:center;background-color:#E8E8E8;height:25px">
+                    <td style="border-radius: 8px;border:2px solid #1C1C1C"><b style="font-size:14px">User's Infomations</b></td>
+                </tr>
+                <tr style="height:100px;background-color:#E8E8E8">
+                    <td>
+                        <center><asp:Image runat="server" ID="avatar" Width="100px" Height="100px" CssClass="avatar"/></center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="changeAvatar" runat="server" Text="Change Avatar" Width="150px" 
+                            CssClass="changeAvaButton" onclick="changeAvatar_Click"/>
+                    </td>
+                </tr>
+                <tr style="height:25px;background-color:#E8E8E8;text-align:center">
+                    <td>
+                        <asp:Label ID="lbUser" runat="server" Font-Size="14px"></asp:Label>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+        <div id="content">
+            <asp:ContentPlaceHolder runat="server" ID="content1"></asp:ContentPlaceHolder>
+        </div>
+        <div id="right">
+            <asp:Calendar runat="server" BackColor="White" BorderColor="#CCCCCC" 
+                BorderStyle="Inset" DayNameFormat="Shortest" FirstDayOfWeek="Monday" 
+                Font-Names="Times New Roman" Font-Size="10pt" ForeColor="Black" Height="200px" 
+                NextPrevFormat="FullMonth" TitleFormat="Month" Width="230px">
+                <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" 
+                    ForeColor="#333333" Height="10pt" />
+                <DayStyle Width="14%" />
+                <NextPrevStyle Font-Size="8pt" ForeColor="White" />
+                <OtherMonthDayStyle ForeColor="#999999" />
+                <SelectedDayStyle BackColor="#CC3333" ForeColor="White" />
+                <SelectorStyle BackColor="#CCCCCC" Font-Bold="True" Font-Names="Verdana" 
+                    Font-Size="8pt" ForeColor="#333333" Width="1%" />
+                <TitleStyle BackColor="Black" Font-Bold="True" Font-Size="13pt" 
+                    ForeColor="White" Height="14pt" />
+                <TodayDayStyle BackColor="#CCCC99" />
+            </asp:Calendar>
+            <div id="notice">
+            <table width="230px">
+                <tr style="text-align:center;background-color:#E8E8E8;height:25px">
+                    <td style="border-radius: 10px;border:2px solid #1C1C1C"><b style="font-size:14px">Notice</b></td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Designed by Nguyen Phuc Hau - IT Group. Today is <asp:Label ID="lbDate" runat="server"></asp:Label>  </p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
